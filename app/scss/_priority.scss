@@ -1,0 +1,40 @@
+.priority {
+  span {
+    display: none;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;    
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 100px;
+  }
+  // .priority__high
+  &__high {
+    background-color: $red;
+  }
+  // .priority__low
+  &__low {
+    background-color: $yellow;
+  }
+  // .priority__normal
+  &__normal {
+    background-color: $green;
+  }
+  &.priority--high {
+    .priority__high {
+      display: inline-block;
+    }
+  }
+  &.priority--low {
+    .priority__low {
+      display: inline-block;
+    }
+  }
+  &.priority--normal {
+    .priority__normal {
+      display: inline-block;
+    }
+  }
+}

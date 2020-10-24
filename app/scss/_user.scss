@@ -1,0 +1,42 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // .user__name
+  &__name {
+    margin-right: 14px;
+    @include textMedium;
+    text-align: right;
+    color:$black;
+  }
+  // .user__cicle
+  &__cicle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 44px;
+    max-height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid $grayscale;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  // .user__icon
+  &__icon {
+    border-radius: 50%;
+  }
+}

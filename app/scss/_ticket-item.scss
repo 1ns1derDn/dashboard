@@ -1,0 +1,19 @@
+.ticket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  padding-left: 32px;
+  padding-right: 32px;
+  // .ticket-item__name
+  &__name {
+    max-width: 336px;
+    @include textMedium;
+    color:$black;
+  }
+  // .ticket-item__count
+  &__count {
+    @include textMedium;
+    color: $grey;
+  }
+}

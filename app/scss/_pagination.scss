@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 175px;
+  width: 100%;
+  @include textNormal;
+  text-align: right;
+  color: $grey;
+  // .pagination__page
+  &__page {
+    display: flex;
+  }
+  // .pagination__number-first
+  &__number-first {
+    display: block;
+  }
+  // .pagination__separator
+  &__separator {
+    display: block;
+  }
+  // .pagination__number-secont
+  &__number-secont {
+    display: block;
+  }
+  // .pagination__text
+  &__text {
+    display: block;
+    margin: 0 4px;
+  }
+  // .pagination__all
+  &__all {
+    display: block;
+  }
+  // .pagination__buttons
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60px;
+    width: 100%;
+  }
+}

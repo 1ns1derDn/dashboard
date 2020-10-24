@@ -1,0 +1,61 @@
+.task-marker {
+  span {
+    display: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  // .task-marker__urgent
+  &__urgent {
+    background: $yellow;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  // .task-marker__new
+  &__new {
+    background:$green;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  // .task-marker__default
+  &__default {
+    background: $grayLightest;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $grey;
+  }
+  &.task-marker--urgent {
+    .task-marker__urgent {
+      display: inline-block;
+    }
+  }
+  &.task-marker--new {
+    .task-marker__new {
+      display: inline-block;
+    }
+  }
+  &.task-marker--default {
+    .task-marker__default {
+      display: inline-block;
+    }
+  }
+}
